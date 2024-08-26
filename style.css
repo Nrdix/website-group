@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background: #1e1e1e;
+    color: #fff;
+    font-family: 'segoe ui', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 96%;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 171px 40px;
+    background: linear-gradient(to left,#1e1e1e,#8c519e);
+    z-index: 1;
+    margin-top: 0;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 140px;
+    height: 70px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    right: 90px;
+    margin-left: 30px;
+    font-weight: 540;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.navbar a.regis {
+    color: #8c519e; 
+    font-weight: bold;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; 
+    height: 2px; 
+    background-color: #ffffff; 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.navbar a.regis::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; 
+    height: 2px; 
+    background-color: #8c519e; 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+}
+
+.text-content {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.text-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'segoe ui', sans-serif;
+}
+
+.text-content h1 span {
+    color: black;
+    margin-left: -3px;
+}
+
+.text-content p {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-weight: 550;
+    max-width: 85%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.btn.masuk {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #f8f8f8;
+    width: 20% ;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.masuk:hover {
+    background-color: #f8f8f8;
+    color: #1e1e1e;
+}
+
+.btn.daftar {
+    background-color: transparent;
+    color: #fff;
+}
+
+.arrow{
+    margin-right: 15%;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    left: 20%;
+}
+
+.image {
+    position: relative;
+    z-index: 5;
+    border-radius: 42%;
+    width: 360px;
+    right: 101%;
+    margin-top: 2px;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+.circle1 > .c1 {
+    transform: translate(-50%, -50%) rotate(40deg);
+    position: absolute;
+    top: 39%;
+    left: -60%;
+    width: 250px;
+    height: 130px;
+    border-radius: 50%;
+    z-index: 1;
+    background: linear-gradient(to left,#1e1e1e 10%,#8c519e 90%);
+}
+
+
+.circle1 > .c2 {
+    transform: translate(-50%, -50%) rotate(500deg);
+    position: absolute;
+    top: 40%;
+    left: -10%;
+    width: 250px;
+    height: 130px;
+    border-radius: 50%;
+    z-index: 2;
+    background: linear-gradient(to left,#1e1e1e 10%,#8c519e 90%);
+}
+
+.circle1 > .c3 {
+    transform: translate(-50%, -50%) rotate(500deg);
+    position: absolute;
+    top: 75%;
+    left: -60%;
+    width: 250px;
+    height: 130px;
+    border-radius: 50%;
+    z-index: 3;
+    background: linear-gradient(to right,#1e1e1e 10%,#8c519e 90%);
+}
+
+.circle1 > .c4 {
+    transform: translate(-50%, -50%) rotate(40deg);
+    position: absolute;
+    top: 76%;
+    left: -10%;
+    width: 250px;
+    height: 130px;
+    border-radius: 50%;
+    z-index: 4;
+    background: linear-gradient(to right,#1e1e1e 10%,#8c519e 90%);
+}
+
+#statistic{
+    background-color: #555555;
+    color: #fff;
+    font-family:"kanit", sans-serif;
+    width: 100%;
+}
+
+#statistic > .wrapper {
+    margin-left: 7%;
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#statistic > .wrapper > div  {
+text-align: center;
+}
+
+#statistic > .wrapper > div > p {
+    font-size: 3.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#statistic > .wrapper > div > p > i {
+    margin-right: 10px;
+    font-size: 3.5rem;
+
+}
+#statistic > .wrapper > div > small {
+    font-size: 1.5rem;
+}
+
+#premium-course{
+    background-color:  #222831; 
+    color: #fff;
+}
+
+#premium-course >.wrapper{
+    padding:50px 0px 50px 0px ;
+}
+
+#premium-course > .wrapper > h4{
+    color: #fff;
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family:"kanit", sans-serif;
+}
+
+#premium-course > .wrapper > h4  > span{
+    color: #8c519e;
+}
+
+#premium-course > .wrapper >p{
+    text-align: center;
+    padding: 0px;
+    padding: 0px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:30% 30% 30% ;
+    margin-left: 3%;
+    grid-gap: 50px;
+    color: #fff;
+    font-family: 'segoe ui', sans-serif;
+    margin-top: 40px;
+}
+
+.grid > .item{
+border: 1px solid #666;
+background-color: #393e46;
+border-radius: 5px;
+position: relative;
+}  
+
+.grid >.item > img{
+    width: 15%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.grid >.item > .item-detail  {
+padding: 30px;
+font-size: 1.3rem;
+font-weight: bold;
+width: 70%;
+}
+
+.grid >.item > .item-detail > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.grid >.item > .item-detail > div > small{
+    color: #ccc;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+}
+.grid >.item > .item-detail > div > a{
+    font-size: 1rem;
+    color: #333;
+    font-weight: normal;
+}
+
+#tentang-saya{
+    background-color:  #EEEEEE; 
+    color: #333;
+}
+#tentang-saya >.wrapper{
+    padding:50px 0px 50px 0px ;
+}
+#tentang-saya > .wrapper > h4{
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family:"kanit", sans-serif;
+}
+#tentang-saya > .wrapper > h4  > span{
+    color: #ffce10;
+}
+#tentang-saya > .wrapper >p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#tentang-saya >.wrapper >div{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+#tentang-saya >.wrapper >div> .foto {
+    width: 30%;
+
+}
+#tentang-saya >.wrapper >div> .foto >img{
+    max-width: 100%;
+}
+#tentang-saya >.wrapper >div> .deskripsi{
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#tentang-saya >.wrapper >div> .deskripsi > p{
+    margin: 0px 0px 10px 0px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+}
+#tentang-saya >.wrapper>div>.deskripsi >.social{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+#tentang-saya >.wrapper>div>.deskripsi >.social >a {
+color: #00adb5;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Posisi awal */
+    }
+    50% {
+        transform: translateY(-15px); /* Gerakan mengambang ke atas */
+    }
+    100% {
+        transform: translateY(0); /* Kembali ke posisi semula */
+    }
+}
+
+.grid>.item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Kelas aktif yang menampilkan elemen grid */
+.grid>.item.show {
+    opacity: 1; /* Tampil penuh */
+    transform: translateY(0); /* Kembali ke posisi semula */
+}
+
+/* Menambahkan animasi saat muncul */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.item {
+    opacity: 0; /* Awalnya tersembunyi */
+    transform: translateY(20px); /* Awalnya sedikit di bawah */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transisi halus */
+}
+
+/* Menggunakan animasi pada item grid saat mereka berada di tampilan */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menambahkan animasi pada item grid */
+.item:nth-child(1) {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 0.2s; /* Delay untuk efek bertahap */
+}
+
+.item:nth-child(2) {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 0.4s; /* Delay untuk efek bertahap */
+}
+
+.item:nth-child(3) {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 0.6s; /* Delay untuk efek bertahap */
+}
+
+/* Jika Anda menambahkan lebih banyak item */
+.item:nth-child(4) {
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 0.8s;
+}
